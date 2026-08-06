@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Your Name</title>
+    <meta name="description" content="Personal website for Your Name." />
+    <style>
+      :root { color-scheme: light dark; --max: 860px; }
+      body { margin: 0; font: 16px/1.55 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+      .wrap { max-width: var(--max); margin: 0 auto; padding: 56px 20px; }
+      header { display: grid; gap: 10px; margin-bottom: 28px; }
+      h1 { font-size: 40px; line-height: 1.1; margin: 0; letter-spacing: -0.02em; }
+      .tagline { margin: 0; opacity: 0.8; }
+      nav { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+      a { color: inherit; }
+      .pill { text-decoration: none; border: 1px solid currentColor; padding: 8px 12px; border-radius: 999px; opacity: 0.9; }
+      .pill:hover { opacity: 1; }
+      section { margin: 28px 0; }
+      h2 { font-size: 18px; margin: 0 0 10px; }
+      .card { border: 1px solid rgba(127,127,127,.35); border-radius: 14px; padding: 14px 16px; }
+      ul { margin: 10px 0 0; padding-left: 18px; }
+      footer { margin-top: 40px; opacity: 0.75; font-size: 14px; }
+      .muted { opacity: 0.8; }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <header>
+        <h1>Daga Panas</h1>
+        <p class="tagline">Senior Data Scientist · University of Edinburgh · <em>Per aspera ad</em> cheescake.</p>
+        <nav aria-label="Links">
+          <a class="pill" href="https://github.com/dpanas">GitHub</a>
+          <a class="pill" href="https://www.linkedin.com/in/dagmara-panas-9aa64b151/">LinkedIn</a>
+        </nav>
+      </header>
+
+      <section class="card">
+        <h2>About</h2>
+        <p class="muted">
+          Blank stare.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Repositories</h2>
+        <ul>
+          <li><a href="https://github.com/dpanas/SloppyIsing/tree/master">Sloppy Ising</a> — Matlab code for fitting and analysing Ising / MaxEnt models of neuronal activity.</li>
+          <li><a href="https://github.com/dpanas/ear-probing">EAR probing</a> — Python code for probing arithmetical relational reasoning in LLMs.</li>
+        </ul>
+      </section>
+
+      <footer>
+        © <span id="y"></span> Daga Panas · <span class="muted">Built with GitHub Pages</span>
+      </footer>
+    </main>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
